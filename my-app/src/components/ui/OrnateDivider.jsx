@@ -1,0 +1,55 @@
+export default function OrnateDivider() {
+    return (
+        <div
+            className="ornate-divider"
+            aria-hidden="true"
+        >
+            <svg
+                viewBox="0 0 400 30"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <line
+                    x1="0"
+                    y1="15"
+                    x2="155"
+                    y2="15"
+                    stroke="var(--gold-light)"
+                    strokeWidth="0.8"
+                />
+                <path
+                    d="M160,15 Q170,5 180,15 Q190,25 200,15 Q210,5 220,15 Q230,25 240,15"
+                    fill="none"
+                    stroke="var(--gold)"
+                    strokeWidth="1"
+                />
+                <circle
+                    cx="200"
+                    cy="15"
+                    r="4"
+                    fill="var(--gold)"
+                    opacity="0.6"
+                />
+                <circle
+                    cx="185"
+                    cy="15"
+                    r="2"
+                    fill="var(--gold-light)"
+                />
+                <circle
+                    cx="215"
+                    cy="15"
+                    r="2"
+                    fill="var(--gold-light)"
+                />
+                <line
+                    x1="245"
+                    y1="15"
+                    x2="400"
+                    y2="15"
+                    stroke="var(--gold-light)"
+                    strokeWidth="0.8"
+                />
+            </svg>
+        </div>
+    );
+}

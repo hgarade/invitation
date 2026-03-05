@@ -1,0 +1,5 @@
+/* Font smoothing — base styles live in src/styles/globals.css */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

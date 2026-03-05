@@ -1,0 +1,112 @@
+/* ─── Love Quote ─────────────────────────────────── */
+.quote-section {
+    padding: clamp(3rem, 9vw, 6rem) clamp(2rem, 8vw, 6rem);
+    text-align: center;
+    background: var(--darker);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.quote-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+        ellipse at 50% 50%,
+        rgba(201, 168, 76, 0.07) 0%,
+        transparent 70%
+    );
+    pointer-events: none;
+}
+.quote-marks {
+    font-family: var(--ff-display);
+    font-size: clamp(4rem, 12vw, 8rem);
+    color: var(--gold);
+    opacity: 0.2;
+    line-height: 1;
+    flex-shrink: 0;
+    align-self: flex-start;
+}
+.right-mark {
+    align-self: flex-end;
+}
+.love-quote {
+    font-family: var(--ff-serif);
+    font-style: italic;
+    font-size: clamp(1.05rem, 4vw, 1.5rem);
+    line-height: 1.9;
+    color: var(--ivory);
+    max-width: 560px;
+    border: none;
+    flex: 1;
+}
+.love-quote cite {
+    display: block;
+    margin-top: 1.2rem;
+    font-family: var(--ff-sans);
+    font-style: normal;
+    font-weight: 200;
+    font-size: 0.72rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--gold-light);
+    opacity: 0.7;
+}
+
+/* ─── Footer ─────────────────────────────────────── */
+.footer {
+    text-align: center;
+    padding: clamp(3.5rem, 9vw, 6rem) 1.5rem;
+    background: var(--dark);
+    position: relative;
+    overflow: hidden;
+}
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 10%;
+    right: 10%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+.footer-inner {
+    position: relative;
+    z-index: 1;
+}
+.footer-monogram {
+    font-family: var(--ff-sans);
+    font-weight: 200;
+    font-size: clamp(2rem, 9vw, 4rem);
+    letter-spacing: 0.12em;
+    color: var(--gold);
+    opacity: 0.18;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 0 40px rgba(201, 168, 76, 0.4);
+}
+.footer-names {
+    font-family: var(--ff-script);
+    font-size: clamp(2.4rem, 9vw, 4rem);
+    color: var(--gold-light);
+    line-height: 1.2;
+}
+.footer-date {
+    font-family: var(--ff-sans);
+    font-size: 0.72rem;
+    letter-spacing: 0.28em;
+    text-transform: uppercase;
+    color: rgba(232, 213, 163, 0.5);
+    margin-top: 0.6rem;
+}
+.footer-hearts {
+    margin-top: 1.4rem;
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+    font-size: 1.1rem;
+    color: var(--rose);
+}
