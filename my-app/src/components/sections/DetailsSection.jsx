@@ -10,7 +10,7 @@ import {
 import weddingQR from "../../assets/Marriage-1024.jpeg";
 import receptionQR from "../../assets/Reception-1024.jpeg";
 
-const QR_IMAGES = [weddingQR, receptionQR];
+const QR_IMAGES = { wedding: weddingQR, reception: receptionQR };
 
 export default function DetailsSection() {
     return (
@@ -56,7 +56,7 @@ export default function DetailsSection() {
                                 title={DETAIL_MAP_TITLE}
                             >
                                 <img
-                                    src={QR_IMAGES[i]}
+                                    src={QR_IMAGES[card.qrKey]}
                                     alt={`${card.title} location QR code`}
                                     className="detail-card-qr"
                                 />
