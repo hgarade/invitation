@@ -90,6 +90,19 @@ export const DETAIL_MAP_TITLE = "Open location in Maps";
 
 export const DETAIL_CARDS = [
     {
+        icon: "💛",
+        title: "Haldi Ceremony",
+        lines: [
+            "Sunday, 29 March 2026",
+            "7:00 PM Onwards",
+            "Shivaji Nagar, Near ITI College",
+            "Khed Road, Bramhapuri",
+            "Chandrapur, Maharashtra",
+        ],
+        mapUrl: "https://maps.app.goo.gl/KS1frP6PjPanmM5a6",
+        qrKey: "reception",
+    },
+    {
         icon: "🛕",
         title: "Wedding Ceremony",
         lines: [
@@ -100,6 +113,7 @@ export const DETAIL_CARDS = [
             "Petrol Pump, Nagpur, Maharashtra",
         ],
         mapUrl: "https://maps.app.goo.gl/BAfsX3VDAPoi4fAe9",
+        qrKey: "wedding",
     },
     {
         icon: "🥂",
@@ -112,6 +126,7 @@ export const DETAIL_CARDS = [
             "Chandrapur, Maharashtra",
         ],
         mapUrl: "https://maps.app.goo.gl/KS1frP6PjPanmM5a6",
+        qrKey: "reception",
     },
 ];
 
@@ -136,43 +151,3 @@ export const VIDEO_POSTER_URL =
 export const VIDEO_POSTER_ALT = "Pre-wedding video thumbnail";
 export const VIDEO_WATCH_LABEL = "Watch Our Story";
 export const VIDEO_IFRAME_TITLE = "Pre-wedding video";
-
-// ── Photo gallery ─────────────────────────────────
-export const GALLERY_PHOTOS = [
-    {
-        id: 1,
-        src: "https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=80",
-        alt: "Couple at sunset",
-        caption: "The moment we knew",
-    },
-    {
-        id: 2,
-        src: "https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=600&q=80",
-        alt: "Wedding rings",
-        caption: "Forever begins here",
-    },
-    {
-        id: 3,
-        src: "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=600&q=80",
-        alt: "First dance",
-        caption: "Our first dance",
-    },
-    {
-        id: 4,
-        src: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=600&q=80",
-        alt: "Bouquet",
-        caption: "Blossoming love",
-    },
-    {
-        id: 5,
-        src: "https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=600&q=80",
-        alt: "Romantic moment",
-        caption: "Two hearts, one story",
-    },
-    {
-        id: 6,
-        src: "https://images.unsplash.com/photo-1509927083803-4bd519298ac4?w=600&q=80",
-        alt: "Walking together",
-        caption: "Walking into forever",
-    },
-];
