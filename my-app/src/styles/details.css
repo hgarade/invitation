@@ -1,6 +1,6 @@
-/* ─── Event Details ──────────────────────────────── */
+/* ─── Event Details ────────────────────────────────── */
 .details-section {
-    max-width: 780px;
+    max-width: 1100px;
 }
 
 .details-cards {
@@ -9,12 +9,9 @@
     gap: 1.4rem;
     margin-top: 1.5rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     .details-cards {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 660px;
-        margin-left: auto;
-        margin-right: auto;
+        grid-template-columns: repeat(3, 1fr);
     }
 }
 
