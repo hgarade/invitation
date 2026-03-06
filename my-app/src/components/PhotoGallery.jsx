@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { GALLERY_PHOTOS } from "../constants/weddingContent";
+import { GALLERY_PHOTOS } from "../constants/galleryPhotos";
 
 const photos = GALLERY_PHOTOS;
 
@@ -24,6 +24,10 @@ export default function PhotoGallery() {
                         src={photo.src}
                         alt={photo.alt}
                         loading="lazy"
+                        decoding="async"
+                        width={600}
+                        height={400}
+                        style={{ contentVisibility: "auto" }}
                     />
                     <div className="gallery-caption">{photo.caption}</div>
                 </motion.div>
@@ -46,7 +50,7 @@ export default function PhotoGallery() {
                             onClick={(e) => e.stopPropagation()}
                         >
                             <img
-                                src={selected.src.replace("w=600", "w=1000")}
+                                src={selected.src}
                                 alt={selected.alt}
                             />
                             <p className="lightbox-caption">
